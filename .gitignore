@@ -1,6 +1,18 @@
 .env
 
 .vscode/
+
 venv_fin_m/
 
+
+my_base.db
+
+
+*.pyc
 __pycache__/
+
+
+.DS_Store
+Thumbs.db
+
+
