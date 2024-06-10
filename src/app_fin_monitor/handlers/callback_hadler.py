@@ -28,7 +28,7 @@ async def request_new_table_name(callback: CallbackQuery, state: FSMContext):
 @router.callback_query(F.data == "edit_lst_stoks")
 async def edit_lst_stk(callback: CallbackQuery, state: FSMContext):
     btn = [record for record in await show_all_table()]
-    state.set_data(table_name=[*btn])
+    state.set_data({"table_name": [*btn]})
     await callback.message.answer(
         text=LEXICON["choise_lst_to_edit"],
         reply_markup=create_inline_kb(
