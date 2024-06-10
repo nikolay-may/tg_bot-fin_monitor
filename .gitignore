@@ -2,7 +2,7 @@
 
 .vscode/
 
-venv_fin_m/
+src/venv_fin_m/
 
 
 my_base.db
